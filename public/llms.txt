@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# orthopaedie-stellenangebote.de - Orthopaedie Stellenangebote
+
+> orthopaedie-stellenangebote.de ist ein spezialisiertes Jobportal fuer Orthopaedie-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Orthopaedie
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://orthopaedie-stellenangebote.de
+- Arbeitgeber-Kontakt: https://orthopaedie-stellenangebote.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://orthopaedie-stellenangebote.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Orthopaedie-Stellenangebote
+- Karriere-Ratgeber fuer Orthopaedie
+- Gehaltsvergleiche und Brancheninformationen
