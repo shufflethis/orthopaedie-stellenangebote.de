@@ -11,37 +11,229 @@ import { Activity, ShieldPlus, Award } from 'lucide-react';
 
 const MOCK_JOBS: Job[] = [
   {
-    id: 'ortho1',
-    title: 'Facharzt für Orthopädie & Unfallchirurgie',
-    company: 'Zentrum für Gelenkchirurgie',
-    location: 'Düsseldorf',
+    id: '1',
+    title: 'Facharzt (m/w/d) in der Orthopädie',
+    company: 'BS Menzel GmbH',
+    location: 'Nürnberg, Mittelfranken',
     type: 'Vollzeit',
-    salary: '95.000€ - 130.000€',
-    description: 'Schwerpunkt Endoprothetik (Hüfte/Knie). Wir suchen einen versierten Operateur für unser zertifiziertes EndoProthetikZentrum.',
-    postedAt: 'Vor 2 Std.',
-    logo: 'https://picsum.photos/seed/medical1/120/120'
+    description: 'Facharzt (m/w/d) in der Orthopädie',
+    postedAt: '2026-03-04'
   },
   {
-    id: 'ortho2',
-    title: 'Physiotherapeut (m/w/d) - Reha Fokus',
-    company: 'Vitalis Ortho-Klinik',
-    location: 'München',
-    type: 'Teilzeit',
-    salary: '3.400€ - 4.200€',
-    description: 'Postoperative Betreuung von Patienten nach wirbelsäulenchirurgischen Eingriffen. Eigene MT-Zulassung erwünscht.',
-    postedAt: 'Vor 6 Std.',
-    logo: 'https://picsum.photos/seed/medical2/120/120'
+    id: '2',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Frankfurt (Oder)',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-04'
   },
   {
-    id: 'ortho3',
-    title: 'Orthopädietechnik-Mechaniker',
-    company: 'Sanitätshaus MotionTech',
-    location: 'Hamburg',
+    id: '3',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Heilbronn, Neckar',
     type: 'Vollzeit',
-    salary: '3.800€ mtl.',
-    description: 'Fertigung von individuellen Prothesen und Orthesen unter Einsatz modernster 3D-Scan-Verfahren.',
-    postedAt: 'Gestern',
-    logo: 'https://picsum.photos/seed/medical3/120/120'
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-04'
+  },
+  {
+    id: '4',
+    title: 'Oberarzt (m/w/d) für die Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Naumburg (Saale)',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) für die Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-04'
+  },
+  {
+    id: '5',
+    title: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Ulm, Donau',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-04'
+  },
+  {
+    id: '6',
+    title: 'Oberarzt (m/w/d) in der Orthopädie',
+    company: 'BS Menzel GmbH',
+    location: 'Offenburg',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) in der Orthopädie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '7',
+    title: 'Facharzt Orthopädie (m/w/d)',
+    company: 'MR Beratungs- und Dienstleistungs GmbH',
+    location: 'Bad Birnbach, Rottal',
+    type: 'Vollzeit',
+    description: 'Facharzt Orthopädie (m/w/d)',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '8',
+    title: 'Facharzt Orthopädie (m/w/d)',
+    company: 'MR Beratungs- und Dienstleistungs GmbH',
+    location: 'Bad Füssing',
+    type: 'Vollzeit',
+    description: 'Facharzt Orthopädie (m/w/d)',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '9',
+    title: 'Oberarzt (m/w/d) Orthopädie',
+    company: 'BS Menzel GmbH',
+    location: 'Soest, Westfalen',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '10',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Göttingen, Niedersachsen',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '11',
+    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Usedom',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '12',
+    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Olpe, Biggesee',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '13',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Nürnberg, Mittelfranken',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '14',
+    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Schmallenberg',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '15',
+    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Minden, Westfalen',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '16',
+    title: 'Assistenzarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Suhl',
+    type: 'Vollzeit',
+    description: 'Assistenzarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '17',
+    title: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Heilbronn, Neckar',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '18',
+    title: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Fulda',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '19',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Bayreuth',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '20',
+    title: 'Oberarzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Bonn',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '21',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Regensburg',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '22',
+    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Neuenhagen bei Berlin',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '23',
+    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Rotthalmünster',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '24',
+    title: 'Facharzt (m/w/d) für Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Konstanz',
+    type: 'Vollzeit',
+    description: 'Facharzt (m/w/d) für Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
+  },
+  {
+    id: '25',
+    title: 'Oberarzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    company: 'BS Menzel GmbH',
+    location: 'Frankfurt (Oder)',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) in der Orthopädie und Unfallchirurgie',
+    postedAt: '2026-03-03'
   }
 ];
 
