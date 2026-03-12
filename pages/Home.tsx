@@ -7,7 +7,8 @@ import JobCard from '../components/JobCard';
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
 import { Job } from '../types';
-import { Activity, ShieldPlus, Award } from 'lucide-react';
+import { Activity, ShieldPlus, Award, ChevronDown } from 'lucide-react';
+import GermanCitiesGeo from '../components/geo/GermanCitiesGeo';
 
 const MOCK_JOBS: Job[] = [
   {
@@ -253,10 +254,10 @@ const Home: React.FC = () => {
         <Hero />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex flex-col lg:flex-row gap-12">
-            <aside className="w-full lg:w-1/4">
+            <aside className="w-full lg:w-1/4 order-2 lg:order-1">
               <Sidebar />
             </aside>
-            <div className="w-full lg:w-3/4">
+            <div className="w-full lg:w-3/4 order-1 lg:order-2">
               <div className="flex items-center justify-between mb-10 border-b border-slate-200 pb-6">
                 <div className="flex items-center gap-4">
                   <div className="bg-cyan-500 p-3 rounded-xl text-white shadow-lg shadow-cyan-200">
@@ -304,8 +305,84 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+        {/* German Cities Geo SEO Section */}
+        <GermanCitiesGeo />
+
+        {/* FAQ Section */}
+        <section className="bg-white py-16 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-3 font-brand">Haeufig gestellte Fragen</h2>
+              <p className="text-slate-500">Alles rund um Ihre Karriere in der Orthopaedie und Unfallchirurgie.</p>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: 'Welche Berufe gibt es in der Orthopaedie?',
+                  a: 'Die Orthopaedie bietet vielfaeltige Karrieremoeglichkeiten: Fachaerzte und Oberaerzte fuer Orthopaedie und Unfallchirurgie, Assistenzaerzte in Weiterbildung, Physiotherapeuten, Orthopaedie-Techniker, Sportwissenschaftler, medizinische Fachangestellte (MFA) in orthopaedischen Praxen sowie Pflegefachkraefte in Kliniken mit orthopaedischem Schwerpunkt.'
+                },
+                {
+                  q: 'Wie lange dauert die Facharztausbildung Orthopaedie und Unfallchirurgie?',
+                  a: 'Die Weiterbildung zum Facharzt fuer Orthopaedie und Unfallchirurgie dauert in Deutschland 72 Monate (6 Jahre). Davon muessen mindestens 48 Monate in der stationaeren Versorgung absolviert werden. Anschliessend koennen Zusatzbezeichnungen wie Spezielle Unfallchirurgie oder Sportmedizin erworben werden.'
+                },
+                {
+                  q: 'Was verdient man als Orthopaedie-Facharzt?',
+                  a: 'Das Gehalt variiert je nach Einrichtung und Erfahrung. An Universitaetskliniken liegt das Einstiegsgehalt als Facharzt bei ca. 6.200-7.400 EUR brutto/Monat (TV-Aerzte). Oberaerzte verdienen zwischen 7.500 und 9.500 EUR. In der Niederlassung oder in Privatkliniken koennen die Gehaelter deutlich hoeher ausfallen.'
+                },
+                {
+                  q: 'Welche Spezialisierungen gibt es in der Orthopaedie?',
+                  a: 'Beliebte Spezialisierungen sind: Endoprothetik (Hueft- und Kniegelenkersatz), Wirbelsaeulenchirurgie, Handchirurgie, Fusschirurgie, Sportorthopaedie, Kinderorthopaedie, Rheumaorthopaedie und Tumororthopaedie. Jede Spezialisierung bietet eigene Karriereperspektiven und Weiterbildungsmoeglichkeiten.'
+                },
+                {
+                  q: 'Ist orthopaedie-stellenangebote.de kostenlos fuer Bewerber?',
+                  a: 'Ja, die Nutzung von orthopaedie-stellenangebote.de ist fuer Bewerber vollstaendig kostenlos. Sie koennen alle Stellenangebote einsehen, sich direkt bewerben und unsere Karriere-Ressourcen nutzen, ohne dass Kosten entstehen.'
+                },
+                {
+                  q: 'Wie bewerbe ich mich auf eine Stelle?',
+                  a: 'Klicken Sie auf das gewuenschte Stellenangebot, um die vollstaendige Beschreibung zu sehen. Von dort koennen Sie sich direkt beim Arbeitgeber bewerben. Wir empfehlen, Ihren Lebenslauf, Approbationsurkunde, Facharztzeugnis und relevante Weiterbildungsnachweise bereitzuhalten.'
+                }
+              ].map((faq, i) => (
+                <details key={i} className="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <span className="font-semibold text-slate-900 pr-4">{faq.q}</span>
+                    <ChevronDown size={20} className="text-slate-400 flex-shrink-0 group-open:rotate-180 transition-transform" />
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-600 leading-relaxed text-sm">{faq.a}</div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Career Info Section */}
+        <section className="bg-slate-50 py-16 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 font-brand">Karriere in der Orthopaedie - Ihr Wegweiser</h2>
+            <div className="prose prose-slate max-w-none">
+              <div className="bg-white rounded-xl border border-slate-200 p-8 mb-6">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Warum eine Karriere in der Orthopaedie?</h3>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  Die Orthopaedie und Unfallchirurgie gehoert zu den gefragtesten medizinischen Fachrichtungen in Deutschland. Mit einer alternden Bevoelkerung und steigendem Gesundheitsbewusstsein waechst der Bedarf an qualifizierten Fachkraeften kontinuierlich. Ob in Universitaetskliniken, Rehazentren, MVZ oder der eigenen Praxis - die Karrieremoeglichkeiten sind vielfaeltig und zukunftssicher.
+                </p>
+                <p className="text-slate-600 leading-relaxed">
+                  Besonders gefragt sind derzeit Fachkraefte in den Bereichen Endoprothetik, Wirbelsaeulenchirurgie und Sportmedizin. Moderne minimalinvasive Verfahren und der Einsatz von Robotik eroeffnen spannende Taetigkeitsfelder fuer technologieaffine Mediziner.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl border border-slate-200 p-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Tipps fuer Ihre Bewerbung</h3>
+                <ul className="text-slate-600 space-y-3 list-disc list-inside">
+                  <li>Heben Sie Ihre Spezialisierungen und OP-Erfahrung klar hervor</li>
+                  <li>Weiterbildungsnachweise und Zertifikate sind in der Orthopaedie besonders relevant</li>
+                  <li>Zeigen Sie Ihre Erfahrung mit modernen Verfahren (z.B. arthroskopische Chirurgie, Robotik)</li>
+                  <li>Wissenschaftliche Publikationen und Kongressbeitraege koennen einen Vorteil darstellen</li>
+                  <li>Informieren Sie sich vorab ueber die Klinik und deren Schwerpunkte</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      
+
       <footer className="bg-white border-t border-slate-200 py-16">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>

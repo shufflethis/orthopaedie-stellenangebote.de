@@ -1,19 +1,35 @@
 # HR-UPDATER: v1.0
 # orthopaedie-stellenangebote.de - Orthopaedie Stellenangebote
 
-> orthopaedie-stellenangebote.de ist ein spezialisiertes Jobportal fuer Orthopaedie-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> orthopaedie-stellenangebote.de ist ein spezialisiertes Jobportal fuer Orthopaedie-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von der Social Media Venture GmbH.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Orthopaedie
+- Spezialisiertes Jobportal fuer Orthopaedie und Unfallchirurgie
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Stellenangebote fuer Fachaerzte, Oberaerzte, Assistenzaerzte, Physiotherapeuten und Orthopaedie-Techniker
+
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin
+- Telefon: +49 30 959 988 700
+- Website: https://orthopaedie-stellenangebote.de
 
 ## Kontakt
 - Website: https://orthopaedie-stellenangebote.de
-- Arbeitgeber-Kontakt: https://orthopaedie-stellenangebote.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://orthopaedie-stellenangebote.de/kontakt-bewerber
+- Arbeitgeber-Kontakt: https://orthopaedie-stellenangebote.de/#/kontakt
+- E-Mail: info@socialmediaventure.com
 
 ## Inhalte
-- Aktuelle Orthopaedie-Stellenangebote
-- Karriere-Ratgeber fuer Orthopaedie
+- Aktuelle Orthopaedie-Stellenangebote in ganz Deutschland
+- Karriere-Ratgeber fuer Orthopaedie und Unfallchirurgie
 - Gehaltsvergleiche und Brancheninformationen
+- Stellen in Universitaetskliniken, Rehazentren, MVZ und Praxen
+
+## Seiten
+- Startseite: https://orthopaedie-stellenangebote.de/
+- Kontakt: https://orthopaedie-stellenangebote.de/#/kontakt
+- Impressum: https://orthopaedie-stellenangebote.de/#/impressum
+- Datenschutz: https://orthopaedie-stellenangebote.de/#/datenschutz
+- Autor: https://orthopaedie-stellenangebote.de/#/autor/thomas-sander
