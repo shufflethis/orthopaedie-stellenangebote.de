@@ -13,6 +13,96 @@ import GermanCitiesGeo from '../components/geo/GermanCitiesGeo';
 const MOCK_JOBS: Job[] = [
   {
     id: '1',
+    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    company: 'Medisca GmbH',
+    location: 'Kabelsketal',
+    type: 'Vollzeit',
+    description: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '2',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Potsdam',
+    type: 'Vollzeit',
+    description: 'Zahnarzt (m/w/d)',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '3',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Zahnarzt (m/w/d)',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '4',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Hannover',
+    type: 'Vollzeit',
+    description: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '5',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Isernhagen',
+    type: 'Vollzeit',
+    description: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '6',
+    title: 'Haustechniker/in (m/w/d) für Bestandsimmobilien mit großer Dienstwohnung',
+    company: 'Neuerburg GrundstücksgemeinschaftSofort-Bewerbung',
+    location: 'Köln',
+    type: 'Vollzeit',
+    description: 'Haustechniker/in (m/w/d) für Bestandsimmobilien mit großer Dienstwohnung',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '7',
+    title: 'Facharzt für Unfallchirurgie und Orthopädie (m/w/d)',
+    company: 'Lahn-Dill-Kliniken GmbH Personalmanagement',
+    location: 'Wetzlar',
+    type: 'Vollzeit',
+    description: 'Facharzt für Unfallchirurgie und Orthopädie (m/w/d)',
+    postedAt: '2026-03-12'
+  },
+  {
+    id: '8',
+    title: 'Oberarzt (m/w/d) Orthopädie',
+    company: 'MEDIAN Parkklinik Bad Rothenfelde GmbH',
+    location: 'Bad Rothenfelde',
+    type: 'Vollzeit',
+    description: 'Oberarzt (m/w/d) Orthopädie',
+    postedAt: '2026-03-11'
+  },
+  {
+    id: '9',
+    title: 'Funktionsoberarzt für die Orthopädie (m/w/d)',
+    company: 'MEDIAN Klinik Hohenlohe Bad Mergentheim GmbH & Co. KG',
+    location: 'Bad Mergentheim',
+    type: 'Vollzeit',
+    description: 'Funktionsoberarzt für die Orthopädie (m/w/d)',
+    postedAt: '2026-03-11'
+  },
+  {
+    id: '10',
+    title: 'Arzthelfer /in - Orthopädie (m/w/d)',
+    company: 'PerZukunft Arbeitsvermittlung GmbH&Co.KG',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Arzthelfer /in - Orthopädie (m/w/d)',
+    postedAt: '2026-03-11'
+  },
+  {
+    id: '11',
     title: 'Wagenmeister/in (m/w/d) für den mobilen Dienst als Vorarbeiter/in (m/w/d)',
     company: 'NORDIC RAIL SERVICE GMBH',
     location: 'Lübeck',
@@ -21,7 +111,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '2',
+    id: '12',
     title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
     company: 'HUK-COBURG Versicherungsgruppe',
     location: 'Weißenburg i. Bayern',
@@ -30,7 +120,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '3',
+    id: '13',
     title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
     company: 'HUK-COBURG Versicherungsgruppe',
     location: 'Nürnberg',
@@ -39,7 +129,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '4',
+    id: '14',
     title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
     company: 'Sikla GmbH',
     location: 'Nürnberg',
@@ -48,7 +138,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '5',
+    id: '15',
     title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
     company: 'Sikla GmbH',
     location: 'München',
@@ -57,7 +147,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '6',
+    id: '16',
     title: 'Techniker/Ingenieur Elektro oder Elektromeister Gebäudetechnik als Projektleiter (m/w/d)',
     company: 'Andrea Erler Personalberatung',
     location: 'Straubing',
@@ -66,7 +156,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '7',
+    id: '17',
     title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Göttingen',
@@ -75,7 +165,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-07'
   },
   {
-    id: '8',
+    id: '18',
     title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Neubrandenburg, Mecklenburg',
@@ -84,7 +174,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-07'
   },
   {
-    id: '9',
+    id: '19',
     title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Eisenach, Thüringen',
@@ -93,7 +183,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-07'
   },
   {
-    id: '10',
+    id: '20',
     title: 'Facharzt (m/w/d) in der Orthopädie',
     company: 'BS Menzel GmbH',
     location: 'Nürnberg, Mittelfranken',
@@ -102,7 +192,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '11',
+    id: '21',
     title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Frankfurt (Oder)',
@@ -111,7 +201,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '12',
+    id: '22',
     title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Heilbronn, Neckar',
@@ -120,7 +210,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '13',
+    id: '23',
     title: 'Oberarzt (m/w/d) für die Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Naumburg (Saale)',
@@ -129,7 +219,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '14',
+    id: '24',
     title: 'Facharzt (m/w/d) in der Orthopädie und Unfallchirurgie',
     company: 'BS Menzel GmbH',
     location: 'Ulm, Donau',
@@ -138,102 +228,12 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '15',
+    id: '25',
     title: 'Oberarzt (m/w/d) in der Orthopädie',
     company: 'BS Menzel GmbH',
     location: 'Offenburg',
     type: 'Vollzeit',
     description: 'Oberarzt (m/w/d) in der Orthopädie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '16',
-    title: 'Facharzt Orthopädie (m/w/d)',
-    company: 'MR Beratungs- und Dienstleistungs GmbH',
-    location: 'Bad Birnbach, Rottal',
-    type: 'Vollzeit',
-    description: 'Facharzt Orthopädie (m/w/d)',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '17',
-    title: 'Facharzt Orthopädie (m/w/d)',
-    company: 'MR Beratungs- und Dienstleistungs GmbH',
-    location: 'Bad Füssing',
-    type: 'Vollzeit',
-    description: 'Facharzt Orthopädie (m/w/d)',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '18',
-    title: 'Oberarzt (m/w/d) Orthopädie',
-    company: 'BS Menzel GmbH',
-    location: 'Soest, Westfalen',
-    type: 'Vollzeit',
-    description: 'Oberarzt (m/w/d) Orthopädie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '19',
-    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Göttingen, Niedersachsen',
-    type: 'Vollzeit',
-    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '20',
-    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Usedom',
-    type: 'Vollzeit',
-    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '21',
-    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Olpe, Biggesee',
-    type: 'Vollzeit',
-    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '22',
-    title: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Nürnberg, Mittelfranken',
-    type: 'Vollzeit',
-    description: 'Oberarzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '23',
-    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Schmallenberg',
-    type: 'Vollzeit',
-    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '24',
-    title: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Minden, Westfalen',
-    type: 'Vollzeit',
-    description: 'Facharzt (m/w/d) Orthopädie und Unfallchirurgie',
-    postedAt: '2026-03-03'
-  },
-  {
-    id: '25',
-    title: 'Assistenzarzt (m/w/d) Orthopädie und Unfallchirurgie',
-    company: 'BS Menzel GmbH',
-    location: 'Suhl',
-    type: 'Vollzeit',
-    description: 'Assistenzarzt (m/w/d) Orthopädie und Unfallchirurgie',
     postedAt: '2026-03-03'
   }
 ];
